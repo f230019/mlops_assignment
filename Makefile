@@ -19,7 +19,7 @@ preprocess: $(RAW)
 	$(PYTHON) src/preprocess.py
 
 features: $(PROCESSED)
-	$(PYTHON) src/features.py
+	$(PYTHON) src/feature_engineering.py
 
 train: $(FEATURES)
 	$(PYTHON) src/train.py
